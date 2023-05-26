@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>take-notes</title>
+  </head>
+  <body class="bg-purple-50">
+<h1 class="bg-purple-100 text-purple-950  font-sans m-1 px-3 py-1 text-3xl text-center w-fill rounded-lg">Take Notes</h1>
+<section class="flex flex-col justify-center items-center ">
+
+<div class="input flex flex-col ">
+  <input  required id="title" type="text " autofocus class="px-2 outline-purple-500 mx-1 m-1 bg-purple-100 placeholder:text-purple-950  " placeholder="Enter the title..."/>
+<span id="title-error" class="text-red-500 px-2 py-1 "></span>
+<textarea required id="desc" name="desc"  class="bg-purple-100 px-2 py-1 outline-purple-500 rounded-lg mx-1 mt-1 text-purple-950 placeholder:text-purple-950 "  placeholder="Enter your tex..." ></textarea>  </div>
+<span id="desc-error" class="text-red-500 px-2 py-1 "></span>
+
+
+<!-- <input  required id="time" type="time" autofocus class="px-2 outline-purple-500 mx-1 m-1 bg-purple-100 placeholder:text-purple-950  " placeholder="Enter the title..."/> -->
+<input  required id="date" type="date" autofocus class="px-2 outline-purple-500 mx-1 m-1 bg-purple-100 placeholder:text-purple-950  " placeholder="Enter the title..."/>
+
+
+
+
+<span>
+
+<button type="submit" id="submit-btn" class=" h-fit w-fit px-2 py-1 bg-purple-200 text-purple-950 m-1 rounded-lg">Add</button>
+<button type="submit" class=" h-fit w-fit px-2 py-1 bg-purple-200 text-purple-950 m-1 rounded-lg" onclick="clearAll()" id="clear">Clear</button>
+
+</span>
+</section>
+
+
+<!-- <button  id="delete" class=" h-fit w-fit px-2 py-1 bg-purple-400 text-purple-950 m-1 rounded-lg" onclick="deleteThisNote(8)" >Delete</button> -->
+
+
+    <ul id="container" class="mt-5 container flex flex-wrap gap-4 items-center justify-center">
+
+
+
+    </ul>
+
+
+
+<script src="./main.js"></script>
+    <!-- <script src="./app.js"></script> -->
+  </body>
+</html>
